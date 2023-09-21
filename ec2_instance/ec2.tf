@@ -2,8 +2,13 @@ terraform {
   required_providers{
       aws={
           source="hashicorp/aws"
-          required_version = ">= 0.12"
+          version = "~> 4.0"
           
       }
   }
+}
+provider "aws" {
+    region = "Singapore"
+    access_key = ""
+    secret_key = ""
 }
