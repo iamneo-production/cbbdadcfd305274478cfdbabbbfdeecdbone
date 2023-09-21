@@ -8,7 +8,15 @@ terraform {
   }
 }
 provider "aws" {
-    region = "Singapore"
-    access_key = ""
-    secret_key = ""
+    region = "ap-northeast-1"
+    access_key = "AKIAYOZVCR6PXCWTV64A"
+    secret_key = "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"
+}
+resource "aws_instance" "linux_server"{
+    ami=""
+    instance_type=""
+
+    tags={
+        Name="MyLinuxServer"
+    }
 }
